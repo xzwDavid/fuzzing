@@ -1,0 +1,21 @@
+run: /home/benchng/software/AFL/afl-fuzz -M afl-master -i /home/benchng/software/contiki-ng-fuzzing/seeds/uip-min -o /home/benchng/shared/sync_folder -- /home/benchng/bin/ground-truth-harness.afl-clang @@
+[0;36mafl-fuzz [1;97m2.56b[0m by <lcamtuf@google.com>
+[1;92m[+] [0mDisabling the UI because AFL_NO_UI is set.[0m
+[1;92m[+] [0mYou have 36 CPU cores and 4 runnable tasks (utilization: 11%).[0m
+[1;92m[+] [0mTry parallel jobs - see docs/parallel_fuzzing.txt.[0m
+[1;93m[!] [1;97mWARNING: [0mNot binding to a CPU core (AFL_NO_AFFINITY set).[0m
+[1;94m[*] [0mChecking core_pattern...[0m
+
+[1;91m[-] [0mHmm, your system is configured to send core dump notifications to an
+    external utility. This will cause issues: there will be an extended delay
+    between stumbling upon a crash and having this information relayed to the
+    fuzzer via the standard waitpid() API.
+
+    To avoid having crashes misinterpreted as timeouts, please log in as root
+    and temporarily modify /proc/sys/kernel/core_pattern, like so:
+
+    echo core >/proc/sys/kernel/core_pattern
+)B[?25h[0m[1;91m
+[-] PROGRAM ABORT : [1;97mPipe at the beginning of 'core_pattern'[1;91m
+         Location : [0mcheck_crash_handling(), afl-fuzz.c:7314
+

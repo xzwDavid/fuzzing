@@ -1,0 +1,29 @@
+[+] Start fuzz-symcc-uip-overflow-uip output folder:
+   - 1e83e8fee8ff running... ------------------------------------
+Start trial at 2023-04-17 15:35
+  [+] seeds:                  /home/benchng/software/contiki-ng-fuzzing/seeds/uip-min
+  [+] AFL root:               /home/benchng/shared/sync_folder
+  [+] AFL target command:     /home/benchng/bin/ground-truth-harness.afl-clang @@
+  [+] SymCC target command:   /home/benchng/bin/ground-truth-harness.symcc @@
+  [+] entry:                  uip
+  [+] COMMIT:             a1cba5607
+
+Run afl-master (outputs in /home/benchng/shared/log/afl-master.log)
+Run afl-slave (outputs in /home/benchng/shared/log/afl-slave.log)
+Run SymCC (outputs in /home/benchng/shared/log/symcc.log)
+  Usage: ./collect-crashes.sh -o dir [ options ]
+
+Required parameters:
+
+  -o dir        - output directory to store the crashes
+
+Optional parameters:
+
+  -t file       - save bad input timestamps into file
+  -h            - also process hangs
+
+Required environment variable:
+
+  SYNC_FOLDER   - directory containing fuzzers' output folders (typically afl's root folder)
+
+   - 1e83e8fee8ff terminated at 2023-04-17 15:35 ---------------

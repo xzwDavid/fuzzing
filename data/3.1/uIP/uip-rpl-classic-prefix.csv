@@ -1,0 +1,11 @@
+run,afl-clang-fast,afl-gcc,angora,honggfuzz,intriguer,mopt,qsym,symcc
+run1,timeout,19967,30501,timeout,timeout,timeout,5507,timeout
+run2,timeout,58702,timeout,timeout,timeout,timeout,2530,timeout
+run3,timeout,timeout,timeout,timeout,timeout,3167,2316,timeout
+run4,timeout,32767,77005,timeout,timeout,8867,3274,timeout
+run5,timeout,timeout,timeout,timeout,timeout,7007,76963,timeout
+run6,timeout,timeout,12141,timeout,10336,18636,47057,timeout
+run7,timeout,10175,timeout,timeout,41496,timeout,42025,timeout
+run8,84345,13323,45622,timeout,timeout,19776,2731,timeout
+run9,timeout,timeout,9952,timeout,timeout,26150,2719,timeout
+run10,51586,2538,39259,timeout,timeout,16090,3781,timeout
